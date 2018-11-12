@@ -13,7 +13,7 @@
         <!--Algorithm View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="AlgorithmViewController" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="AlgorithmViewController" customModule="AlgorithmAaron" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -21,28 +21,35 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ByR-rN-Auh">
                                 <rect key="frame" x="0.0" y="269" width="375" height="128"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Algorithm" textAlignment="natural" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="5hZ-95-4eS" userLabel="Algorithm">
-                                <rect key="frame" x="150" y="122" width="74.5" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5hZ-95-4eS" userLabel="Algorithm">
+                                <rect key="frame" x="0.0" y="36" width="375" height="225"/>
                                 <accessibility key="accessibilityConfiguration" label="Algorithm"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Algorithm">
+                                        <attributes>
+                                            <font key="NSFont" metaFont="system" size="17"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="5hZ-95-4eS" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="102" id="8eK-VQ-RcS"/>
-                            <constraint firstItem="ByR-rN-Auh" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="HqE-pe-7iO"/>
-                            <constraint firstItem="5hZ-95-4eS" firstAttribute="centerX" secondItem="ByR-rN-Auh" secondAttribute="centerX" id="M2g-LB-91k"/>
-                            <constraint firstItem="ByR-rN-Auh" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ewe-3Q-QtN"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ByR-rN-Auh" secondAttribute="bottom" constant="270" id="lRX-ds-zEd"/>
-                            <constraint firstAttribute="trailing" secondItem="ByR-rN-Auh" secondAttribute="trailing" id="sd0-tV-Fsa"/>
+                            <constraint firstAttribute="trailing" secondItem="5hZ-95-4eS" secondAttribute="trailing" id="CiS-me-XCO"/>
+                            <constraint firstItem="5hZ-95-4eS" firstAttribute="leading" secondItem="ByR-rN-Auh" secondAttribute="leading" id="Lj5-kT-ZGJ"/>
+                            <constraint firstItem="ByR-rN-Auh" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="NMs-L0-jhY"/>
+                            <constraint firstItem="ByR-rN-Auh" firstAttribute="top" secondItem="5hZ-95-4eS" secondAttribute="bottom" constant="8" symbolic="YES" id="Oar-ET-fou"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ByR-rN-Auh" secondAttribute="bottom" constant="270" id="UcY-YO-U1p"/>
+                            <constraint firstItem="5hZ-95-4eS" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Uxc-W4-xuQ"/>
+                            <constraint firstItem="5hZ-95-4eS" firstAttribute="trailing" secondItem="ByR-rN-Auh" secondAttribute="trailing" id="X6v-WZ-tt4"/>
+                            <constraint firstItem="5hZ-95-4eS" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="fbG-WY-6TM"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="UIImageView" destination="5hZ-95-4eS" id="Tgb-0R-Ujv"/>
-                        <outlet property="swiftImage" destination="ByR-rN-Auh" id="NU1-6D-mZJ"/>
+                        <outlet property="algorithmText" destination="5hZ-95-4eS" id="yMD-Em-htO"/>
+                        <outlet property="swiftImage" destination="ByR-rN-Auh" id="qlx-RV-ora"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
